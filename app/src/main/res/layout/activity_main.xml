@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/b_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="ON" />
+
+    <Button
+        android:id="@+id/b_off"
+        android:layout_below="@+id/b_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="20dp"
+        android:text="OFF" />
+
+    <Button
+        android:id="@+id/b_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/b_on"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="20dp"
+        android:text="Discoverable" />
+
+    <Button
+        android:id="@+id/b_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_disc"
+        android:layout_alignStart="@+id/b_disc"
+        android:layout_alignTop="@+id/b_off"
+        android:text="List" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/b_off"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true">
+
+    </ListView>
+</RelativeLayout>
