@@ -33,7 +33,7 @@
         android:layout_alignTop="@+id/b_on"
         android:layout_marginEnd="13dp"
         android:layout_marginRight="20dp"
-        android:text="Discoverable" />
+        android:text="Disponível" />
 
     <Button
         android:id="@+id/b_list"
@@ -42,7 +42,7 @@
         android:layout_below="@+id/b_disc"
         android:layout_alignStart="@+id/b_disc"
         android:layout_alignTop="@+id/b_off"
-        android:text="List" />
+        android:text="Listar" />
 
     <ListView
         android:id="@+id/list"

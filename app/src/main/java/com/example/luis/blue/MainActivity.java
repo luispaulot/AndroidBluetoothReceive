@@ -145,11 +145,12 @@ public class MainActivity extends AppCompatActivity {
                     recebido = (String) msg.obj;
                     dadosBluetooth.append(recebido);
 
-                    int fimInformacao = dadosBluetooth.indexOf("");
+                    int fimInformacao = dadosBluetooth.indexOf("}");
                     if (fimInformacao > 0) {
                         String dadosCompletos = dadosBluetooth.substring(0, fimInformacao);
                         Toast.makeText(MainActivity.this, dadosCompletos, Toast.LENGTH_SHORT).show();
                     }
+
                 }
             }
         };
